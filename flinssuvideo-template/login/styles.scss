@@ -1,13 +1,21 @@
+$blanco: white;
+
+@mixin flex{
+  display: flex;
+  align-items: center;
+}
+
 body {
   margin: 0;
-  font-family: "Muli", sans-serif;
+  font-family: 'Muli', sans-serif;
 }
 
 .header {
-  align-items: center;
+  @include flex;
+  // align-items: center;
   background-color: #21c08b;
   color: white;
-  display: flex;
+  // display: flex;
   height: 100px;
   justify-content: space-between;
   top: 0px;
@@ -68,14 +76,14 @@ body {
   text-decoration: underline;
 }
 
-.login__container--social-media > div {
+.login__container--social-media>div {
   display: flex;
   align-items: center;
   font-size: 14px;
   margin-bottom: 10px;
 }
 
-.login__container--social-media > div > img {
+.login__container--social-media>div>img {
   width: 30px;
   margin-right: 10px;
 }
@@ -84,14 +92,14 @@ body {
   font-size: 14px;
 }
 
-.login__container--register a {
-  color: white;
+.login__container--register a{
+  color: $blanco;
   font-weight: bold;
   font-size: 14px;
   text-decoration: none;
 }
 
-.login__container--register a:hover {
+.login__container--register a:hover{
   text-decoration: underline;
 }
 
@@ -102,7 +110,7 @@ body {
   border-right: 0px;
   border-top: 0px;
   color: white;
-  font-family: "Muli", sans-serif;
+  font-family: 'Muli', sans-serif;
   font-size: 16px;
   height: 50px;
   margin-bottom: 20px;
@@ -122,7 +130,7 @@ body {
   cursor: pointer;
   font-size: 16px;
   font-weight: bold;
-  font-family: "Muli", sans-serif;
+  font-family: 'Muli', sans-serif;
   height: 50px;
   letter-spacing: 1px;
   margin: 10px 0px;
@@ -161,5 +169,3 @@ body {
     flex-direction: column;
   }
 }
-
-/*# sourceMappingURL=styles.css.map */
